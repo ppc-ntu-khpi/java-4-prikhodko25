@@ -1,4 +1,4 @@
 # Практична робота "Реалізація успадкування"
 Я обрала **слона**
-![alt text](Elephant.png)
-![alt text](Diagram.png)
+![alt text](https://github.com/ppc-ntu-khpi/java-4-prikhodko25/blob/master/images/Elephant.png)
+![alt text](https://github.com/ppc-ntu-khpi/java-4-prikhodko25/blob/master/images/Diagram.png)
