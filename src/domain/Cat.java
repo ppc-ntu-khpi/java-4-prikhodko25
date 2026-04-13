@@ -1,47 +1,45 @@
 package domain;
+import domain.Animal;
 
-public class Cat extends Predator {
+public class Elephant extends Animal {
+    protected int trunk_length;
+    
+    protected int tusk_length;
 
-    private String kind;
 
-    public Cat(String name, int weight, String kind) {
-        this.name=name;
-        this.weight=weight;
-        this.kind=kind;
+    public Elephant(String name, int weight, int trunk_length, int tusk_length) {
+        this.name = name;
+        this.weight = weight;
+        this.trunk_length = trunk_length;
+        this.tusk_length = tusk_length;
     }
 
-    public Cat() {
-        this("Fluffy",4,"just a cat");
+   
+    public Elephant() {
+        this("Big Boy", 2000, 200, 150);
     }
 
-    public Cat(String name) {
-        this(name,4,"just a cat");
-    }
-        
-
-    public void play() {
-        System.out.println("Cat is playing...");
+    public void spray_water() {
+        System.out.println("Elephant sprays water with its trunk");
     }
 
+    public void charge() {
+        System.out.println("Elephant charges at the threat");
+    }
+    
     @Override
-    public void hunt() {
-        System.out.println("Cat hunting for a mouse...");
+    public void eat(){
+        System.out.println("Elephant eats plants");
     }
-
+    
+    @Override
+    public void speak(){
+        System.out.println("The elephant moos with its trunk");
+    }
+    
     @Override
     public String toString() {
-        return super.toString()+"\nKind:\t"+this.kind+"\n\nThis is Cat!";
+        return super.toString() + "\nThis is Elephant!";
     }
 
-    @Override
-    public void speak() {
-        System.out.println("Meow! Meow!");
-    }
-
-    @Override
-    public void eat() {
-        System.out.println("Cat eats meat...");
-    }
-    
-    
 }
